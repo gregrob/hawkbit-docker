@@ -29,6 +29,7 @@ The following folder structure is used for the container:
 Service | Description | Port/s
 --- | --- | ---
 hawkBit | Update manager web interface / API. | 9090
-MySQL | Database for hawkBit. | No ports exposed
+MySQL | Database for hawkBit. | No ports exposed.
+Adminer | Database viewer / editor web interface. | 9091
 RabbitMQ | Message broker web interface. | 15672
 Simulator | Commented out but when enabled web interface.  | 8083
