@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Check if the script is being sourced
+if [ "${BASH_SOURCE[0]}" != "${0}" ]
+then
+    echo "Setting up environment for docker ..."
+
+    export GENERIC_USER="admin"
+    echo "Exported GENERIC_USER=$GENERIC_USER"
+    
+    export GENERIC_PWD="ENTER PASSWORD"
+    echo "Exported GENERIC_PWD=$GENERIC_PWD"
+    
+    export GENERIC_EMAIL="ENTER EMAIL"
+    echo "Exported GENERIC_EMAIL=$GENERIC_EMAIL"
+
+else
+    echo "FAIL: Please call script with - source ./env.sh"
+
+fi

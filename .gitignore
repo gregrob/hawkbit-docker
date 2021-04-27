@@ -1,0 +1,16 @@
+# Exclude credentials
+docker-env.sh
+docker-compose.yml.*
+
+# Include all of the persistent folders but not the contents
+persistent/hawkbit/data/*
+!persistent/hawkbit/data/.gitignore
+
+persistent/hawkbit/artifactrepo/*
+!persistent/hawkbit/artifactrepo/.gitignore
+
+persistent/mysql/*
+!persistent/mysql/.gitignore
+
+persistent/rabbitmq/*
+!persistent/rabbitmq/.gitignore
